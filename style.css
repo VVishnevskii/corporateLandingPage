@@ -257,10 +257,7 @@ margin-bottom: 140px;
   }
 }
 .staff {
-  background-color: #000000;
-  background-image: url(img/staffBg.jpg);
-  background-position: center;
-  background-repeat: repeat;
+  background-color: transparent;
 }
 
 .employee {
@@ -297,3 +294,7 @@ margin-bottom: 140px;
 }
 
 
+
+.partner {
+  margin-bottom: 85px;
+}

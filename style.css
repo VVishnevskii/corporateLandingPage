@@ -123,16 +123,27 @@ body {
   color: #282828;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
 .top-header {
-  height: 812px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: transparent;
 }
 
 .top-header__title {
+  width: 715px;
+  padding-top: 210px;
   font-family: "Exo", sans-serif;
   font-size: 3.75em;
   line-height: 75px;
   font-weight: 100;
+  color: #282828;
 }
 
 .sign {
@@ -144,6 +155,8 @@ body {
   text-transform: uppercase;
   color: #ff6d6d;
 }
+
+
 
 .sign--margin {
   margin-top: 120px;
@@ -205,7 +218,7 @@ margin-bottom: 140px;
   margin-top: 40px;
 }
 
-.block-title--center {
+.block--center {
   text-align: center;
 }
 
@@ -285,7 +298,7 @@ margin-bottom: 140px;
   color: #ff6d6d;
 }
 
-.block-text--white {
+.text--white {
   color: #ffffff;
 }
 
@@ -297,4 +310,148 @@ margin-bottom: 140px;
 
 .partner {
   margin-bottom: 85px;
+}
+
+@media (max-width: 990px) {
+  .browser__img {
+    display: none;
+  }
+}
+
+.subscription-form {
+  padding: 90px 0;
+  background-color: #323969;
+}
+
+.subscription-form__item {
+  width: 260px;
+  height: 50px;
+  margin-top: 90px;
+  margin-right: 28px;
+  background-color: #464c77;
+  border:1px solid #999cb4;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.subscription-form__item.subscription-form__button {
+  position: relative;
+  text-transform: uppercase;
+  background-color: #ff6d6d;
+  border-color: #ff6d6d;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.subscription-form__button::before {
+  position: absolute;
+  top: -65px;
+  left: 30px;
+  display: block;
+  width: 192px;
+  font-size: 1em;
+  text-transform: none;
+  color: #e8e9ef;
+  content: "30 days free trial for all.";
+}
+
+.subscription-form__button::after {
+  position: absolute;
+  top: -60px;
+  left: 5px;
+  display: block;
+  width: 18px;
+  height: 42px;
+  background-image: url(img/arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
+
+
+.subscription-form__text {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.subscription-form__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.subscription-form__link {
+  text-decoration: underline;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.subscription-form__link:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.subscription-form__link:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.top-header__play {
+  width: 59px;
+  height: 59px;
+  margin: 35px 0;
+  border: 1px solid #8286a3;
+  border-radius: 50%;
+  background-color: #8286a3;
+  background-image: url(img/buttonPlayPolygon.png);
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
+  transition-duration: 0.3s;
+  opacity: 0.8;
+}
+
+.top-header__play:hover {
+  opacity: 0.6;
+}
+
+.top-header__play:active {
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-header__try-now {
+  width: 192px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #ff6d6d;
+  border:1px solid #ff6d6d;
+  border-radius: 2px;
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+
+.top-header__try-now:hover {
+  opacity: 0.8;
+}
+
+.top-header__try-now:active {
+  opacity: 0.6;
+}
+
+.top-header__footnote {
+  margin-bottom: 225px;
+  font-family: "Exo", sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 0.04em;
+  color: #282828;
+  opacity: 0.6;
 }

@@ -137,7 +137,7 @@ a {
 }
 
 .top-header__title {
-  width: 715px;
+  max-width: 715px;
   padding-top: 210px;
   font-family: "Exo", sans-serif;
   font-size: 3.75em;

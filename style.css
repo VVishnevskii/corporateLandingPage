@@ -404,9 +404,6 @@ margin-bottom: 140px;
   content: "";
 }
 
-
-
-
 .subscription-form__text {
   color: #ffffff;
   opacity: 0.6;
@@ -437,12 +434,6 @@ margin-bottom: 140px;
   color: #ffffff;
   opacity: 0.3;
 }
-
-
-
-
-
-
 
 .text-center {
   text-align: center;
@@ -480,6 +471,18 @@ margin-bottom: 140px;
 }
 
 .page-footer {
+  background-image: url(img/footerBg.png);
+  background-position: 115% 80%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .page-footer {
+    background-position: 100% 0;
+  }
+}
+
+.page-footer__inner {
   padding-top: 80px;
   padding-bottom: 90px;
 }
@@ -559,5 +562,3 @@ margin-bottom: 140px;
 .page-footer__button:active {
   box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
 }
-
-
